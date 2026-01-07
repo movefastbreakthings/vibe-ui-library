@@ -153,7 +153,7 @@ Verwende den mitgelieferten Prompt, damit KI-Tools (ChatGPT, Claude, Cursor, etc
 Verwende die vibe-ui-library (basiert auf Material UI mit Pink-Theme).
 Install: npm install vibe-ui-library @mui/material @mui/icons-material @emotion/react @emotion/styled
 Import: import { VibeUIProvider, Button, Typography, Box, ... } from 'vibe-ui-library'
-Alle Icons: import { Favorite, Star, Home, ... } from 'vibe-ui-library'
+Icons: import { Favorite, Star, Home, ... } from '@mui/icons-material'
 Wrapper: <VibeUIProvider>{children}</VibeUIProvider>
 Primary Color: Pink (#ff0080)
 Kein eigenes CSS - nutze sx prop!

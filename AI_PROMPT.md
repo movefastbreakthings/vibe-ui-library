@@ -59,7 +59,7 @@ Favorite, Star, Home, Settings, Person, Mail, Phone, Search, Add, Delete, Edit, 
 
 ## Beispiel-Imports
 
-// Komponenten und Icons aus derselben Library importieren:
+// Komponenten aus vibe-ui-library importieren:
 import {
   VibeUIProvider,
   Box,
@@ -70,10 +70,10 @@ import {
   Card,
   CardContent,
   TextField,
-  Favorite,
-  Star,
-  ArrowForward
 } from 'vibe-ui-library';
+
+// Icons aus @mui/icons-material importieren:
+import { Favorite, Star, ArrowForward } from '@mui/icons-material';
 
 ## Theme-Farben
 
@@ -165,7 +165,7 @@ function ThemeToggle() {
 ```
 Verwende die vibe-ui-library (basiert auf Material UI mit Pink-Theme).
 Import: import { VibeUIProvider, Button, Typography, Box, ... } from 'vibe-ui-library'
-Alle Icons: import { Favorite, Star, Home, ... } from 'vibe-ui-library'
+Icons: import { Favorite, Star, Home, ... } from '@mui/icons-material'
 Wrapper: <VibeUIProvider>{children}</VibeUIProvider>
 Primary Color: Pink (#ff0080)
 Kein eigenes CSS - nutze sx prop!

@@ -1,6 +1,6 @@
 {
   "name": "vibe-ui-library",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A vibrant UI library based on Material UI with a bold pink accent",
   "type": "module",
   "main": "dist/index.js",
@@ -27,16 +27,19 @@
     "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0",
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
-    "@mui/material": "^6.0.0"
+    "@mui/material": "^6.0.0 || ^7.0.0"
   },
   "devDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.6",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "^12.1.2",
-    "@types/react": "^18.3.0",
-    "@types/react-dom": "^18.3.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "rollup": "^4.29.1",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",

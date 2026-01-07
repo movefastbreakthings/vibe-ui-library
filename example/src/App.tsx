@@ -504,16 +504,12 @@ function DemoContent() {
               <CardActions sx={{ px: 2, pb: 2 }}>
                 <Button
                   variant="contained"
-                  sx={{
-                    bgcolor: 'white !important',
-                    color: 'primary.main',
-                    fontWeight: 600,
-                    '&:hover': { 
-                      bgcolor: 'rgba(255,255,255,0.9) !important',
-                      transform: 'scale(1.02)',
-                    },
-                  }}
                   onClick={() => setSnackbarOpen(true)}
+                  style={{
+                    backgroundColor: '#ffffff',
+                    color: '#ff0080',
+                    fontWeight: 600,
+                  }}
                 >
                   Get Started
                 </Button>

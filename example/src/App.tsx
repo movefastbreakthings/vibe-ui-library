@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Grid2 from "@mui/material/Grid2";
 import {
   VibeUIProvider,
   useVibeTheme,
@@ -7,6 +6,7 @@ import {
   Box,
   Container,
   Stack,
+  Grid,
   // Inputs
   Button,
   TextField,
@@ -148,9 +148,9 @@ function DemoContent() {
           </Tabs>
         </Paper>
 
-        <Grid2 container spacing={5}>
+        <Grid container spacing={5}>
           {/* Buttons & Inputs Card */}
-          <Grid2 size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
             <Card>
               <CardHeader
                 avatar={<Avatar sx={{ bgcolor: "primary.main" }}>B</Avatar>}
@@ -317,10 +317,10 @@ function DemoContent() {
                 </Button>
               </CardActions>
             </Card>
-          </Grid2>
+          </Grid>
 
           {/* Data Display Card */}
-          <Grid2 size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
             <Card>
               <CardHeader
                 avatar={<Avatar sx={{ bgcolor: "secondary.main" }}>D</Avatar>}
@@ -468,10 +468,10 @@ function DemoContent() {
                 Something went wrong!
               </Alert>
             </Stack>
-          </Grid2>
+          </Grid>
 
           {/* Contact Card */}
-          <Grid2 size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
             <Card>
               <CardHeader
                 avatar={
@@ -507,10 +507,10 @@ function DemoContent() {
                 </Button>
               </CardActions>
             </Card>
-          </Grid2>
+          </Grid>
 
           {/* Stats Card */}
-          <Grid2 size={{ xs: 12, md: 6 }}>
+          <Grid item xs={12} md={6}>
             <Card
               sx={{
                 background: (theme) =>
@@ -570,8 +570,8 @@ function DemoContent() {
                 </Button>
               </CardActions>
             </Card>
-          </Grid2>
-        </Grid2>
+          </Grid>
+        </Grid>
 
         {/* Footer */}
         <Box sx={{ textAlign: "center", mt: 6, py: 4 }}>

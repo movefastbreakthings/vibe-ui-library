@@ -146,7 +146,7 @@ function DemoContent() {
           </Tabs>
         </Paper>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={5}>
           {/* Buttons & Inputs Card */}
           <Grid size={{ xs: 12, md: 6 }}>
             <Card>
@@ -156,10 +156,10 @@ function DemoContent() {
                 subheader="Interactive components"
               />
               <CardContent>
-                <Stack spacing={3}>
+                <Stack spacing={4}>
                   {/* Button variants */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
                       Button Variants
                     </Typography>
                     <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
@@ -174,7 +174,7 @@ function DemoContent() {
 
                   {/* Icon Buttons */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
                       Icon Buttons
                     </Typography>
                     <Stack direction="row" spacing={1}>
@@ -195,7 +195,7 @@ function DemoContent() {
 
                   {/* FAB */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
                       Floating Action Buttons
                     </Typography>
                     <Stack direction="row" spacing={2} alignItems="center">
@@ -214,7 +214,7 @@ function DemoContent() {
 
                   {/* Toggle Buttons */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
                       Toggle Buttons
                     </Typography>
                     <ToggleButtonGroup
@@ -263,7 +263,7 @@ function DemoContent() {
 
                   {/* Slider */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1 }}>
                       Slider: {sliderValue}%
                     </Typography>
                     <Slider
@@ -274,7 +274,7 @@ function DemoContent() {
 
                   {/* Rating */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1 }}>
                       Rating
                     </Typography>
                     <Rating
@@ -305,10 +305,10 @@ function DemoContent() {
                 subheader="Visual components"
               />
               <CardContent>
-                <Stack spacing={3}>
+                <Stack spacing={4}>
                   {/* Chips */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
                       Chips
                     </Typography>
                     <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
@@ -333,7 +333,7 @@ function DemoContent() {
 
                   {/* Avatars */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
                       Avatars & Badges
                     </Typography>
                     <Stack direction="row" spacing={2} alignItems="center">
@@ -360,7 +360,7 @@ function DemoContent() {
 
                   {/* Progress */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
                       Progress Indicators
                     </Typography>
                     <Stack spacing={2}>
@@ -377,7 +377,7 @@ function DemoContent() {
 
                   {/* Tooltips */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom>
+                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
                       Tooltips
                     </Typography>
                     <Stack direction="row" spacing={2}>
@@ -398,7 +398,7 @@ function DemoContent() {
             </Card>
 
             {/* Alerts */}
-            <Stack spacing={2} sx={{ mt: 4 }}>
+            <Stack spacing={2.5} sx={{ mt: 5 }}>
               <Alert severity="success" icon={<Check />}>
                 <AlertTitle>Success</AlertTitle>
                 Your changes have been saved!

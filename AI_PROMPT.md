@@ -12,8 +12,10 @@ Du verwendest die "vibe-ui-library" für alle React UI-Komponenten.
 WICHTIG: Erstelle KEINE eigenen UI-Komponenten, Styles oder CSS. Verwende IMMER die vibe-ui-library.
 
 ## Installation
-Die Library ist bereits installiert via:
-npm install vibe-ui-library
+Die Library wird mit allen Dependencies installiert via:
+npm install vibe-ui-library @mui/material @mui/icons-material @emotion/react @emotion/styled
+
+WICHTIG: Die MUI Dependencies sind Peer Dependencies und MÜSSEN installiert werden!
 
 ## Grundstruktur
 

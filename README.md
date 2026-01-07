@@ -13,13 +13,10 @@ Eine lebendige UI-Library basierend auf [Material UI](https://mui.com/) mit eine
 ## 📦 Installation
 
 ```bash
-npm install vibe-ui-library
+npm install vibe-ui-library @mui/material @mui/icons-material @emotion/react @emotion/styled
 ```
 
-**Peer Dependencies** (falls nicht bereits installiert):
-```bash
-npm install react react-dom @mui/material @mui/icons-material @emotion/react @emotion/styled
-```
+> ⚠️ **Wichtig:** Die MUI Dependencies (`@mui/material`, `@mui/icons-material`, `@emotion/react`, `@emotion/styled`) sind **Peer Dependencies** und müssen mit installiert werden!
 
 ## 🎨 Features
 
@@ -154,6 +151,7 @@ Verwende den mitgelieferten Prompt, damit KI-Tools (ChatGPT, Claude, Cursor, etc
 
 ```
 Verwende die vibe-ui-library (basiert auf Material UI mit Pink-Theme).
+Install: npm install vibe-ui-library @mui/material @mui/icons-material @emotion/react @emotion/styled
 Import: import { VibeUIProvider, Button, Typography, Box, ... } from 'vibe-ui-library'
 Alle Icons: import { Favorite, Star, Home, ... } from 'vibe-ui-library'
 Wrapper: <VibeUIProvider>{children}</VibeUIProvider>

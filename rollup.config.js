@@ -31,11 +31,13 @@ export default [
         external: [
             'react',
             'react-dom',
+            'react/jsx-runtime',
             '@emotion/react',
             '@emotion/styled',
             '@mui/material',
             '@mui/icons-material',
             /^@mui\//,
+            /^react\//,
         ],
     },
     {

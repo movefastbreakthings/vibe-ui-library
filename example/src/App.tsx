@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {
   VibeUIProvider,
   useVibeTheme,
@@ -68,14 +68,14 @@ import {
   Share,
   Download,
   Bolt,
-} from 'vibe-ui-library';
+} from "vibe-ui-library";
 
 function ThemeToggle() {
   const { mode, toggleMode } = useVibeTheme();
   return (
-    <Tooltip title={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}>
+    <Tooltip title={`Switch to ${mode === "light" ? "dark" : "light"} mode`}>
       <IconButton onClick={toggleMode} color="inherit">
-        {mode === 'light' ? <DarkMode /> : <LightMode />}
+        {mode === "light" ? <DarkMode /> : <LightMode />}
       </IconButton>
     </Tooltip>
   );
@@ -88,10 +88,10 @@ function DemoContent() {
   const [checked, setChecked] = useState(true);
   const [switchOn, setSwitchOn] = useState(true);
   const [snackbarOpen, setSnackbarOpen] = useState(false);
-  const [alignment, setAlignment] = useState('left');
+  const [alignment, setAlignment] = useState("left");
 
   return (
-    <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
+    <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
       {/* App Bar */}
       <AppBar position="static" color="primary">
         <Toolbar>
@@ -105,7 +105,7 @@ function DemoContent() {
 
       <Container maxWidth="lg" sx={{ py: 4 }}>
         {/* Hero Section */}
-        <Box sx={{ textAlign: 'center', mb: 6 }}>
+        <Box sx={{ textAlign: "center", mb: 6 }}>
           <Typography variant="h2" gutterBottom sx={{ fontWeight: 700 }}>
             ✨ Vibe UI Demo
           </Typography>
@@ -128,7 +128,9 @@ function DemoContent() {
         {/* Breadcrumbs */}
         <Breadcrumbs sx={{ mb: 4 }}>
           <Link underline="hover" color="inherit" href="#">
-            <Home sx={{ mr: 0.5, fontSize: 20, verticalAlign: 'text-bottom' }} />
+            <Home
+              sx={{ mr: 0.5, fontSize: 20, verticalAlign: "text-bottom" }}
+            />
             Home
           </Link>
           <Link underline="hover" color="inherit" href="#">
@@ -151,7 +153,7 @@ function DemoContent() {
           <Grid2 size={{ xs: 12, md: 6 }}>
             <Card>
               <CardHeader
-                avatar={<Avatar sx={{ bgcolor: 'primary.main' }}>B</Avatar>}
+                avatar={<Avatar sx={{ bgcolor: "primary.main" }}>B</Avatar>}
                 title="Buttons & Inputs"
                 subheader="Interactive components"
               />
@@ -159,10 +161,19 @@ function DemoContent() {
                 <Stack spacing={4}>
                   {/* Button variants */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
+                    <Typography
+                      variant="subtitle2"
+                      gutterBottom
+                      sx={{ mb: 1.5 }}
+                    >
                       Button Variants
                     </Typography>
-                    <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
+                    <Stack
+                      direction="row"
+                      spacing={1}
+                      flexWrap="wrap"
+                      useFlexGap
+                    >
                       <Button variant="contained">Contained</Button>
                       <Button variant="outlined">Outlined</Button>
                       <Button variant="text">Text</Button>
@@ -174,7 +185,11 @@ function DemoContent() {
 
                   {/* Icon Buttons */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
+                    <Typography
+                      variant="subtitle2"
+                      gutterBottom
+                      sx={{ mb: 1.5 }}
+                    >
                       Icon Buttons
                     </Typography>
                     <Stack direction="row" spacing={1}>
@@ -195,7 +210,11 @@ function DemoContent() {
 
                   {/* FAB */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
+                    <Typography
+                      variant="subtitle2"
+                      gutterBottom
+                      sx={{ mb: 1.5 }}
+                    >
                       Floating Action Buttons
                     </Typography>
                     <Stack direction="row" spacing={2} alignItems="center">
@@ -214,7 +233,11 @@ function DemoContent() {
 
                   {/* Toggle Buttons */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
+                    <Typography
+                      variant="subtitle2"
+                      gutterBottom
+                      sx={{ mb: 1.5 }}
+                    >
                       Toggle Buttons
                     </Typography>
                     <ToggleButtonGroup
@@ -245,14 +268,14 @@ function DemoContent() {
 
                   {/* Checkbox & Switch */}
                   <Stack direction="row" alignItems="center" spacing={4}>
-                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                    <Box sx={{ display: "flex", alignItems: "center" }}>
                       <Checkbox
                         checked={checked}
                         onChange={(e) => setChecked(e.target.checked)}
                       />
                       <Typography>Checkbox</Typography>
                     </Box>
-                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                    <Box sx={{ display: "flex", alignItems: "center" }}>
                       <Switch
                         checked={switchOn}
                         onChange={(e) => setSwitchOn(e.target.checked)}
@@ -300,7 +323,7 @@ function DemoContent() {
           <Grid2 size={{ xs: 12, md: 6 }}>
             <Card>
               <CardHeader
-                avatar={<Avatar sx={{ bgcolor: 'secondary.main' }}>D</Avatar>}
+                avatar={<Avatar sx={{ bgcolor: "secondary.main" }}>D</Avatar>}
                 title="Data Display"
                 subheader="Visual components"
               />
@@ -308,15 +331,28 @@ function DemoContent() {
                 <Stack spacing={4}>
                   {/* Chips */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
+                    <Typography
+                      variant="subtitle2"
+                      gutterBottom
+                      sx={{ mb: 1.5 }}
+                    >
                       Chips
                     </Typography>
-                    <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
+                    <Stack
+                      direction="row"
+                      spacing={1}
+                      flexWrap="wrap"
+                      useFlexGap
+                    >
                       <Chip label="Primary" color="primary" />
                       <Chip label="Secondary" color="secondary" />
                       <Chip label="Success" color="success" />
                       <Chip label="Error" color="error" />
-                      <Chip label="Clickable" color="primary" onClick={() => {}} />
+                      <Chip
+                        label="Clickable"
+                        color="primary"
+                        onClick={() => {}}
+                      />
                       <Chip
                         label="Deletable"
                         color="primary"
@@ -333,16 +369,20 @@ function DemoContent() {
 
                   {/* Avatars */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
+                    <Typography
+                      variant="subtitle2"
+                      gutterBottom
+                      sx={{ mb: 1.5 }}
+                    >
                       Avatars & Badges
                     </Typography>
                     <Stack direction="row" spacing={2} alignItems="center">
                       <AvatarGroup max={4}>
-                        <Avatar sx={{ bgcolor: 'primary.main' }}>A</Avatar>
-                        <Avatar sx={{ bgcolor: 'secondary.main' }}>B</Avatar>
-                        <Avatar sx={{ bgcolor: 'success.main' }}>C</Avatar>
-                        <Avatar sx={{ bgcolor: 'error.main' }}>D</Avatar>
-                        <Avatar sx={{ bgcolor: 'warning.main' }}>E</Avatar>
+                        <Avatar sx={{ bgcolor: "primary.main" }}>A</Avatar>
+                        <Avatar sx={{ bgcolor: "secondary.main" }}>B</Avatar>
+                        <Avatar sx={{ bgcolor: "success.main" }}>C</Avatar>
+                        <Avatar sx={{ bgcolor: "error.main" }}>D</Avatar>
+                        <Avatar sx={{ bgcolor: "warning.main" }}>E</Avatar>
                       </AvatarGroup>
                       <Badge badgeContent={4} color="primary">
                         <Mail color="action" />
@@ -360,7 +400,11 @@ function DemoContent() {
 
                   {/* Progress */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
+                    <Typography
+                      variant="subtitle2"
+                      gutterBottom
+                      sx={{ mb: 1.5 }}
+                    >
                       Progress Indicators
                     </Typography>
                     <Stack spacing={2}>
@@ -368,7 +412,11 @@ function DemoContent() {
                       <Stack direction="row" spacing={3} alignItems="center">
                         <CircularProgress size={40} />
                         <CircularProgress color="secondary" size={40} />
-                        <CircularProgress variant="determinate" value={65} size={40} />
+                        <CircularProgress
+                          variant="determinate"
+                          value={65}
+                          size={40}
+                        />
                       </Stack>
                     </Stack>
                   </Box>
@@ -377,7 +425,11 @@ function DemoContent() {
 
                   {/* Tooltips */}
                   <Box>
-                    <Typography variant="subtitle2" gutterBottom sx={{ mb: 1.5 }}>
+                    <Typography
+                      variant="subtitle2"
+                      gutterBottom
+                      sx={{ mb: 1.5 }}
+                    >
                       Tooltips
                     </Typography>
                     <Stack direction="row" spacing={2}>
@@ -423,7 +475,7 @@ function DemoContent() {
             <Card>
               <CardHeader
                 avatar={
-                  <Avatar sx={{ bgcolor: 'primary.main' }}>
+                  <Avatar sx={{ bgcolor: "primary.main" }}>
                     <Person />
                   </Avatar>
                 }
@@ -463,7 +515,7 @@ function DemoContent() {
               sx={{
                 background: (theme) =>
                   `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.secondary.main} 100%)`,
-                color: 'white',
+                color: "white",
               }}
             >
               <CardContent>
@@ -503,12 +555,15 @@ function DemoContent() {
               </CardContent>
               <CardActions sx={{ px: 2, pb: 2 }}>
                 <Button
-                  variant="contained"
+                  variant="outlined"
                   onClick={() => setSnackbarOpen(true)}
-                  style={{
-                    backgroundColor: '#ffffff',
-                    color: '#ff0080',
-                    fontWeight: 600,
+                  sx={{
+                    borderColor: "white",
+                    color: "white",
+                    "&:hover": {
+                      borderColor: "white",
+                      bgcolor: "rgba(255,255,255,0.1)",
+                    },
                   }}
                 >
                   Get Started
@@ -519,9 +574,17 @@ function DemoContent() {
         </Grid2>
 
         {/* Footer */}
-        <Box sx={{ textAlign: 'center', mt: 6, py: 4 }}>
+        <Box sx={{ textAlign: "center", mt: 6, py: 4 }}>
           <Typography variant="body2" color="text.secondary">
-            Made with <Favorite sx={{ fontSize: 16, color: 'primary.main', verticalAlign: 'text-bottom' }} /> using Vibe UI Library
+            Made with{" "}
+            <Favorite
+              sx={{
+                fontSize: 16,
+                color: "primary.main",
+                verticalAlign: "text-bottom",
+              }}
+            />{" "}
+            using Vibe UI Library
           </Typography>
         </Box>
       </Container>

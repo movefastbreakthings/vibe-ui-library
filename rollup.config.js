@@ -5,36 +5,44 @@ import dts from 'rollup-plugin-dts';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 export default [
-  {
-    input: 'src/index.ts',
-    output: [
-      {
-        file: 'dist/index.js',
-        format: 'cjs',
-        sourcemap: true,
-      },
-      {
-        file: 'dist/index.esm.js',
-        format: 'esm',
-        sourcemap: true,
-      },
+    {
+        input: 'src/index.ts',
+        output: [
+            {
+                file: 'dist/index.js',
+                format: 'cjs',
+                sourcemap: false,
+            },
+            {
+                file: 'dist/index.esm.js',
+                format: 'esm',
+                sourcemap: false,
+            },
+        ],
+        plugins: [
+            peerDepsExternal(),
+            resolve(),
+            commonjs(),
+            typescript({
+                tsconfig: './tsconfig.json',
+                exclude: ['**/*.stories.tsx', '**/*.test.tsx'],
+            }),
+        ],
+        external: [
+      'react', 
+      'react-dom', 
+      '@emotion/react', 
+      '@emotion/styled',
+      '@mui/material',
+      '@mui/icons-material',
+      /^@mui\//,
     ],
-    plugins: [
-      peerDepsExternal(),
-      resolve(),
-      commonjs(),
-      typescript({
-        tsconfig: './tsconfig.json',
-        exclude: ['**/*.stories.tsx', '**/*.test.tsx'],
-      }),
-    ],
-    external: ['react', 'react-dom', '@emotion/react', '@emotion/styled'],
-  },
-  {
-    input: 'dist/index.d.ts',
-    output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts()],
-    external: [/\.css$/],
-  },
+    },
+    {
+        input: 'dist/index.d.ts',
+        output: [{ file: 'dist/index.d.ts', format: 'esm' }],
+        plugins: [dts()],
+        external: [/\.css$/],
+    },
 ];
 

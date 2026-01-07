@@ -1,0 +1,38 @@
+import { ThemeOptions } from '@mui/material/styles';
+export declare const vibeThemeOptions: ThemeOptions;
+export declare const vibeDarkThemeOptions: ThemeOptions;
+export declare const vibeTheme: import("@mui/material").Theme;
+export declare const vibeDarkTheme: import("@mui/material").Theme;
+export declare const vibePink: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+    A100: string;
+    A200: string;
+    A400: string;
+    A700: string;
+};
+export declare const vibePurple: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+    A100: string;
+    A200: string;
+    A400: string;
+    A700: string;
+};
+export default vibeTheme;

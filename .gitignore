@@ -1,8 +1,11 @@
 # Dependencies
 node_modules/
 
-# Build output
-dist/
+# Build output (root dist is NOT ignored - needed for GitHub installs)
+# dist/
+
+# Example dist (built by GitHub Actions)
+example/dist/
 
 # IDE
 .idea/

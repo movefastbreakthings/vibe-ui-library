@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Grid2 from "@mui/material/Grid2";
 import {
   VibeUIProvider,
   useVibeTheme,
@@ -6,7 +7,6 @@ import {
   Box,
   Container,
   Stack,
-  Grid2,
   // Inputs
   Button,
   TextField,

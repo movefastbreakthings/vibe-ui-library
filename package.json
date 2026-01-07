@@ -1,6 +1,6 @@
 {
   "name": "vibe-ui-library",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A vibrant UI library based on Material UI with a bold pink accent",
   "type": "module",
   "main": "dist/index.js",

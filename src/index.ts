@@ -27,12 +27,13 @@ export {
   Box,
   Container,
   Grid,
-  Grid2,
   Stack,
   ImageList,
   ImageListItem,
   ImageListItemBar,
 } from "@mui/material";
+
+// Grid2 must be imported directly: import Grid2 from '@mui/material/Grid2';
 
 // Inputs
 export {

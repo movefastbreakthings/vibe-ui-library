@@ -32,14 +32,14 @@ npm install git+https://github.com/movefastbreakthings/vibe-ui-librarry.git
 ### Basic Setup
 
 ```tsx
-import { VibeProvider, Button, Typography } from 'vibe-ui-library';
+import { VibeUIProvider, Button, Typography } from 'vibe-ui-library';
 
 function App() {
   return (
-    <VibeProvider>
+    <VibeUIProvider>
       <Typography variant="h1">Hello Vibe!</Typography>
       <Button variant="contained">Pink Button</Button>
-    </VibeProvider>
+    </VibeUIProvider>
   );
 }
 ```
@@ -47,7 +47,7 @@ function App() {
 ### Mit Dark Mode Toggle
 
 ```tsx
-import { VibeProvider, useVibeTheme, IconButton, DarkMode, LightMode } from 'vibe-ui-library';
+import { VibeUIProvider, useVibeTheme, IconButton, DarkMode, LightMode } from 'vibe-ui-library';
 
 function ThemeToggle() {
   const { mode, toggleMode } = useVibeTheme();
@@ -61,10 +61,10 @@ function ThemeToggle() {
 
 function App() {
   return (
-    <VibeProvider defaultMode="light">
+    <VibeUIProvider defaultMode="light">
       <ThemeToggle />
       {/* Dein Content */}
-    </VibeProvider>
+    </VibeUIProvider>
   );
 }
 ```
@@ -150,9 +150,9 @@ Verwende den mitgelieferten Prompt, damit KI-Tools (ChatGPT, Claude, Cursor, etc
 
 ```
 Verwende die vibe-ui-library (basiert auf Material UI mit Pink-Theme).
-Import: import { VibeProvider, Button, Typography, Box, ... } from 'vibe-ui-library'
+Import: import { VibeUIProvider, Button, Typography, Box, ... } from 'vibe-ui-library'
 Alle Icons: import { Favorite, Star, Home, ... } from 'vibe-ui-library'
-Wrapper: <VibeProvider>{children}</VibeProvider>
+Wrapper: <VibeUIProvider>{children}</VibeUIProvider>
 Primary Color: Pink (#ff0080)
 Kein eigenes CSS - nutze sx prop!
 ```

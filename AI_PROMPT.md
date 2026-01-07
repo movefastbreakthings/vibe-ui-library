@@ -7,7 +7,7 @@
 ## PROMPT
 
 ```
-Du verwendest die "vibe-ui-library" für alle React UI-Komponenten. 
+Du verwendest die "vibe-ui-library" für alle React UI-Komponenten.
 
 WICHTIG: Erstelle KEINE eigenen UI-Komponenten, Styles oder CSS. Verwende IMMER die vibe-ui-library.
 
@@ -17,15 +17,15 @@ npm install git+https://github.com/movefastbreakthings/vibe-ui-librarry.git
 
 ## Grundstruktur
 
-Jede App MUSS mit dem VibeProvider umschlossen sein:
+Jede App MUSS mit dem VibeUIProvider umschlossen sein:
 
-import { VibeProvider } from 'vibe-ui-library';
+import { VibeUIProvider } from 'vibe-ui-library';
 
 function App() {
   return (
-    <VibeProvider defaultMode="light">
+    <VibeUIProvider defaultMode="light">
       {/* Dein Content hier */}
-    </VibeProvider>
+    </VibeUIProvider>
   );
 }
 
@@ -59,7 +59,7 @@ Favorite, Star, Home, Settings, Person, Mail, Phone, Search, Add, Delete, Edit, 
 
 // Komponenten und Icons aus derselben Library importieren:
 import {
-  VibeProvider,
+  VibeUIProvider,
   Box,
   Container,
   Stack,
@@ -89,7 +89,7 @@ Verwende diese über die sx prop:
 
 ## Dark Mode
 
-Der VibeProvider unterstützt Dark Mode:
+Der VibeUIProvider unterstützt Dark Mode:
 
 import { useVibeTheme, IconButton, DarkMode, LightMode } from 'vibe-ui-library';
 
@@ -162,10 +162,9 @@ function ThemeToggle() {
 
 ```
 Verwende die vibe-ui-library (basiert auf Material UI mit Pink-Theme).
-Import: import { VibeProvider, Button, Typography, Box, ... } from 'vibe-ui-library'
+Import: import { VibeUIProvider, Button, Typography, Box, ... } from 'vibe-ui-library'
 Alle Icons: import { Favorite, Star, Home, ... } from 'vibe-ui-library'
-Wrapper: <VibeProvider>{children}</VibeProvider>
+Wrapper: <VibeUIProvider>{children}</VibeUIProvider>
 Primary Color: Pink (#ff0080)
 Kein eigenes CSS - nutze sx prop!
 ```
-

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-  VibeProvider,
+  VibeUIProvider,
   useVibeTheme,
   // Layout
   Box,
@@ -539,9 +539,9 @@ function DemoContent() {
 
 function App() {
   return (
-    <VibeProvider defaultMode="light">
+    <VibeUIProvider defaultMode="light">
       <DemoContent />
-    </VibeProvider>
+    </VibeUIProvider>
   );
 }
 

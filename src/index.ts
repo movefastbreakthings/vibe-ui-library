@@ -15,8 +15,8 @@ export {
   vibePurple,
 } from './theme';
 
-export { VibeProvider, useVibeTheme } from './components';
-export type { VibeProviderProps } from './components';
+export { VibeUIProvider, useVibeTheme } from './components';
+export type { VibeUIProviderProps } from './components';
 
 // ---------------------------------------------------------------------------
 // Re-export all Material UI Components

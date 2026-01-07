@@ -12,31 +12,31 @@ interface VibeContextType {
 
 const VibeContext = createContext<VibeContextType | undefined>(undefined);
 
-export interface VibeProviderProps {
+export interface VibeUIProviderProps {
   children: ReactNode;
   defaultMode?: ThemeMode;
   disableCssBaseline?: boolean;
 }
 
 /**
- * VibeProvider - Wrapper-Komponente für die Vibe UI Library
+ * VibeUIProvider - Wrapper-Komponente für die Vibe UI Library
  *
  * Stellt das Theme bereit und ermöglicht das Umschalten zwischen Light/Dark Mode.
  *
  * @example
  * ```tsx
- * import { VibeProvider, Button } from 'vibe-ui-library';
+ * import { VibeUIProvider, Button } from 'vibe-ui-library';
  *
  * function App() {
  *   return (
- *     <VibeProvider defaultMode="light">
+ *     <VibeUIProvider defaultMode="light">
  *       <Button variant="contained">Vibe Button</Button>
- *     </VibeProvider>
+ *     </VibeUIProvider>
  *   );
  * }
  * ```
  */
-export const VibeProvider: React.FC<VibeProviderProps> = ({
+export const VibeUIProvider: React.FC<VibeUIProviderProps> = ({
   children,
   defaultMode = 'light',
   disableCssBaseline = false,
@@ -76,10 +76,10 @@ export const VibeProvider: React.FC<VibeProviderProps> = ({
 export const useVibeTheme = (): VibeContextType => {
   const context = useContext(VibeContext);
   if (context === undefined) {
-    throw new Error('useVibeTheme must be used within a VibeProvider');
+    throw new Error('useVibeTheme must be used within a VibeUIProvider');
   }
   return context;
 };
 
-export default VibeProvider;
+export default VibeUIProvider;
 

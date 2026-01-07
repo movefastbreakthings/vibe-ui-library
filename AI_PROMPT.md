@@ -31,6 +31,22 @@ function App() {
   );
 }
 
+### Alternative (bei Kompatibilitätsproblemen mit VibeUIProvider)
+
+Falls VibeUIProvider einen Fehler wie "createContext is not a function" wirft, nutze direkt den MUI ThemeProvider:
+
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { vibeTheme } from 'vibe-ui-library';
+
+function App() {
+  return (
+    <ThemeProvider theme={vibeTheme}>
+      <CssBaseline />
+      {/* Dein Content hier */}
+    </ThemeProvider>
+  );
+}
+
 ## Verfügbare Komponenten (alle von vibe-ui-library importieren!)
 
 ### Layout

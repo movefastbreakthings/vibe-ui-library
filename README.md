@@ -79,20 +79,25 @@ import { vibePink, vibePurple } from 'vibe-ui-library';
 // vibePurple[500] = '#9c27b0' - Sekundärfarbe
 ```
 
-### Theme ohne Provider
+### Theme ohne Provider (Alternative bei Kompatibilitätsproblemen)
+
+Falls `VibeUIProvider` nicht funktioniert (z.B. in bestimmten Build-Umgebungen), nutze direkt den MUI `ThemeProvider`:
 
 ```tsx
-import { ThemeProvider } from 'vibe-ui-library';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import { vibeTheme, vibeDarkTheme } from 'vibe-ui-library';
 
 function App() {
   return (
     <ThemeProvider theme={vibeTheme}>
+      <CssBaseline />
       {/* Dein Content */}
     </ThemeProvider>
   );
 }
 ```
+
+> ⚠️ **Hinweis:** Bei dieser Variante steht der `useVibeTheme()` Hook für Dark Mode Toggle nicht zur Verfügung.
 
 ## 📚 Verfügbare Exports
 

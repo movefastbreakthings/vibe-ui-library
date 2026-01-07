@@ -13,10 +13,10 @@ export {
   vibeDarkThemeOptions,
   vibePink,
   vibePurple,
-} from './theme';
+} from "./theme";
 
-export { VibeUIProvider, useVibeTheme } from './components';
-export type { VibeUIProviderProps } from './components';
+export { VibeUIProvider, useVibeTheme } from "./components";
+export type { VibeUIProviderProps } from "./components";
 
 // ---------------------------------------------------------------------------
 // Re-export all Material UI Components
@@ -32,7 +32,7 @@ export {
   ImageList,
   ImageListItem,
   ImageListItemBar,
-} from '@mui/material';
+} from "@mui/material";
 
 // Inputs
 export {
@@ -63,7 +63,7 @@ export {
   TextField,
   ToggleButton,
   ToggleButtonGroup,
-} from '@mui/material';
+} from "@mui/material";
 
 // Data Display
 export {
@@ -93,7 +93,7 @@ export {
   TableSortLabel,
   Tooltip,
   Typography,
-} from '@mui/material';
+} from "@mui/material";
 
 // Feedback
 export {
@@ -110,7 +110,7 @@ export {
   Skeleton,
   Snackbar,
   SnackbarContent,
-} from '@mui/material';
+} from "@mui/material";
 
 // Surfaces
 export {
@@ -127,7 +127,7 @@ export {
   CardMedia,
   Paper,
   Toolbar,
-} from '@mui/material';
+} from "@mui/material";
 
 // Navigation
 export {
@@ -155,7 +155,7 @@ export {
   Tabs,
   TabScrollButton,
   MobileStepper,
-} from '@mui/material';
+} from "@mui/material";
 
 // Utils
 export {
@@ -175,7 +175,7 @@ export {
   Slide,
   Collapse,
   Fade,
-} from '@mui/material';
+} from "@mui/material";
 
 // Theming & Styling
 export {
@@ -189,12 +189,10 @@ export {
   emphasize,
   getContrastRatio,
   useColorScheme,
-} from '@mui/material';
+} from "@mui/material";
 
 // System
-export {
-  useThemeProps,
-} from '@mui/material';
+export { useThemeProps } from "@mui/material";
 
 // Types re-exports
 export type {
@@ -243,10 +241,9 @@ export type {
   ToggleButtonProps,
   TooltipProps,
   TypographyProps,
-} from '@mui/material';
+} from "@mui/material";
 
 // ---------------------------------------------------------------------------
 // Re-export Material Icons
 // ---------------------------------------------------------------------------
-export * from '@mui/icons-material';
-
+export * from "@mui/icons-material";

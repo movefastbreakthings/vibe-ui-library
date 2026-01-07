@@ -6,7 +6,7 @@ import {
   Box,
   Container,
   Stack,
-  Grid,
+  Grid2,
   // Inputs
   Button,
   TextField,
@@ -146,9 +146,9 @@ function DemoContent() {
           </Tabs>
         </Paper>
 
-        <Grid container spacing={5}>
+        <Grid2 container spacing={5}>
           {/* Buttons & Inputs Card */}
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid2 size={{ xs: 12, md: 6 }}>
             <Card>
               <CardHeader
                 avatar={<Avatar sx={{ bgcolor: 'primary.main' }}>B</Avatar>}
@@ -294,10 +294,10 @@ function DemoContent() {
                 </Button>
               </CardActions>
             </Card>
-          </Grid>
+          </Grid2>
 
           {/* Data Display Card */}
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid2 size={{ xs: 12, md: 6 }}>
             <Card>
               <CardHeader
                 avatar={<Avatar sx={{ bgcolor: 'secondary.main' }}>D</Avatar>}
@@ -416,10 +416,10 @@ function DemoContent() {
                 Something went wrong!
               </Alert>
             </Stack>
-          </Grid>
+          </Grid2>
 
           {/* Contact Card */}
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid2 size={{ xs: 12, md: 6 }}>
             <Card>
               <CardHeader
                 avatar={
@@ -455,10 +455,10 @@ function DemoContent() {
                 </Button>
               </CardActions>
             </Card>
-          </Grid>
+          </Grid2>
 
           {/* Stats Card */}
-          <Grid size={{ xs: 12, md: 6 }}>
+          <Grid2 size={{ xs: 12, md: 6 }}>
             <Card
               sx={{
                 background: (theme) =>
@@ -515,8 +515,8 @@ function DemoContent() {
                 </Button>
               </CardActions>
             </Card>
-          </Grid>
-        </Grid>
+          </Grid2>
+        </Grid2>
 
         {/* Footer */}
         <Box sx={{ textAlign: 'center', mt: 6, py: 4 }}>

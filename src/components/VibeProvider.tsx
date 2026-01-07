@@ -1,8 +1,14 @@
-import React, { createContext, useContext, useMemo, useState, ReactNode } from 'react';
-import { ThemeProvider, CssBaseline } from '@mui/material';
-import { vibeTheme, vibeDarkTheme } from '../theme';
+import React, {
+  createContext,
+  useContext,
+  useMemo,
+  useState,
+  ReactNode,
+} from "react";
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import { vibeTheme, vibeDarkTheme } from "../theme";
 
-type ThemeMode = 'light' | 'dark';
+type ThemeMode = "light" | "dark";
 
 interface VibeContextType {
   mode: ThemeMode;
@@ -38,17 +44,17 @@ export interface VibeUIProviderProps {
  */
 export const VibeUIProvider: React.FC<VibeUIProviderProps> = ({
   children,
-  defaultMode = 'light',
+  defaultMode = "light",
   disableCssBaseline = false,
 }) => {
   const [mode, setMode] = useState<ThemeMode>(defaultMode);
 
   const toggleMode = () => {
-    setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+    setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
   };
 
   const theme = useMemo(() => {
-    return mode === 'light' ? vibeTheme : vibeDarkTheme;
+    return mode === "light" ? vibeTheme : vibeDarkTheme;
   }, [mode]);
 
   const contextValue = useMemo(
@@ -76,10 +82,9 @@ export const VibeUIProvider: React.FC<VibeUIProviderProps> = ({
 export const useVibeTheme = (): VibeContextType => {
   const context = useContext(VibeContext);
   if (context === undefined) {
-    throw new Error('useVibeTheme must be used within a VibeUIProvider');
+    throw new Error("useVibeTheme must be used within a VibeUIProvider");
   }
   return context;
 };
 
 export default VibeUIProvider;
-

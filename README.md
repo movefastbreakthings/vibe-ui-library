@@ -2,8 +2,8 @@
 
 Eine lebendige UI-Library basierend auf [Material UI](https://mui.com/) mit einem knalligen **Pink** (`#ff0080`) als Akzentfarbe.
 
-![Vibe UI Demo](https://img.shields.io/badge/demo-live-ff0080?style=for-the-badge)
-![npm](https://img.shields.io/badge/npm-ready-ff0080?style=for-the-badge)
+[![npm version](https://img.shields.io/npm/v/vibe-ui-library?style=for-the-badge&color=ff0080)](https://www.npmjs.com/package/vibe-ui-library)
+[![npm downloads](https://img.shields.io/npm/dm/vibe-ui-library?style=for-the-badge&color=ff0080)](https://www.npmjs.com/package/vibe-ui-library)
 ![React](https://img.shields.io/badge/React-18%2B-61dafb?style=for-the-badge)
 
 ## 🚀 Live Demo
@@ -13,8 +13,12 @@ Eine lebendige UI-Library basierend auf [Material UI](https://mui.com/) mit eine
 ## 📦 Installation
 
 ```bash
-# Von GitHub installieren
-npm install git+https://github.com/movefastbreakthings/vibe-ui-library.git
+npm install vibe-ui-library
+```
+
+**Peer Dependencies** (falls nicht bereits installiert):
+```bash
+npm install react react-dom @mui/material @mui/icons-material @emotion/react @emotion/styled
 ```
 
 ## 🎨 Features

@@ -13,7 +13,7 @@ WICHTIG: Erstelle KEINE eigenen UI-Komponenten, Styles oder CSS. Verwende IMMER 
 
 ## Installation
 Die Library ist bereits installiert via:
-npm install git+https://github.com/movefastbreakthings/vibe-ui-library.git
+npm install vibe-ui-library
 
 ## Grundstruktur
 

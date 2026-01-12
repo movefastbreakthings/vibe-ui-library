@@ -1,6 +1,6 @@
 {
-  "name": "vibe-tailwind-library",
-  "version": "1.0.0",
+  "name": "vibe-ui-library",
+  "version": "1.1.1",
   "description": "A Material Tailwind wrapper with vibrant pink theme",
   "type": "module",
   "main": "dist/index.js",

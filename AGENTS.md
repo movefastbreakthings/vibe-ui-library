@@ -1,6 +1,6 @@
 ## Prompt
 
-You are building a React application using **vibe-tailwind-library**, a Material Tailwind wrapper with a vibrant pink theme. Use the package from github:movefastbreakthings/vibe-ui-library.
+You are building a React application using **vibe-ui-library**, a Material Tailwind wrapper with a vibrant pink theme. Use the package from github:movefastbreakthings/vibe-ui-library.
 
 ### ⚠️ Critical Setup Requirements
 
@@ -9,7 +9,7 @@ You are building a React application using **vibe-tailwind-library**, a Material
 ```bash
 # Install with legacy peer deps and React 18
 npm install react@18 react-dom@18 @types/react@18 @types/react-dom@18 --legacy-peer-deps
-npm install vibe-tailwind-library@github:movefastbreakthings/vibe-ui-library @material-tailwind/react @heroicons/react --legacy-peer-deps
+npm install vibe-ui-library@github:movefastbreakthings/vibe-ui-library @material-tailwind/react @heroicons/react --legacy-peer-deps
 npm install -D tailwindcss@3 postcss autoprefixer --legacy-peer-deps
 ```
 
@@ -101,7 +101,7 @@ export default withMT({
 ### Setup
 
 ```tsx
-import { VibeUIProvider } from "vibe-tailwind-library";
+import { VibeUIProvider } from "vibe-ui-library";
 
 function App() {
   return <VibeUIProvider>{/* Your app here */}</VibeUIProvider>;
@@ -111,7 +111,7 @@ function App() {
 ### Import Pattern
 
 ```tsx
-// Components from vibe-tailwind-library
+// Components from vibe-ui-library
 import {
   Button,
   Card,
@@ -130,7 +130,7 @@ import {
   TabsHeader,
   Tab,
   // ... all Material Tailwind components
-} from "vibe-tailwind-library";
+} from "vibe-ui-library";
 
 // Icons from @heroicons/react (NOT from the library!)
 import { HeartIcon, StarIcon } from "@heroicons/react/24/solid";
@@ -152,7 +152,7 @@ import {
   Typography,
   Button,
   Input,
-} from "vibe-tailwind-library";
+} from "vibe-ui-library";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 
 function ContactForm() {
@@ -191,7 +191,7 @@ function ContactForm() {
 ### ❌ DO NOT
 
 - ❌ Create custom CSS for colors or styles
-- ❌ **NEVER import icons from vibe-tailwind-library** - They don't exist there!
+- ❌ **NEVER import icons from vibe-ui-library** - They don't exist there!
 - ❌ Use Tailwind color classes like `bg-pink-500` for themed elements
 - ❌ Skip the VibeUIProvider wrapper
 - ❌ Use React 19 (only React 18 is supported)

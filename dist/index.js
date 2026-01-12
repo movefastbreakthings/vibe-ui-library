@@ -383,7 +383,7 @@ const vibeColors = {
  *
  * @example
  * ```tsx
- * import { VibeUIProvider } from 'vibe-tailwind-library';
+ * import { VibeUIProvider } from 'vibe-ui-library';
  *
  * function App() {
  *   return (
@@ -395,7 +395,7 @@ const vibeColors = {
  * ```
  */
 const VibeUIProvider = ({ children }) => {
-    return (jsx(ThemeProvider, { value: vibeTheme, children: children }));
+    return jsx(ThemeProvider, { value: vibeTheme, children: children });
 };
 
 export { VibeUIProvider, vibeColors, vibeTheme };

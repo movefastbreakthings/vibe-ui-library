@@ -9,7 +9,7 @@ Erstelle eine **React UI Library**, die [Material Tailwind](https://www.material
 ### 1. Projekt-Struktur
 
 ```
-vibe-tailwind-library/
+vibe-ui-library/
 ├── src/
 │   ├── index.ts              # Haupt-Export (alle Komponenten re-exportieren)
 │   ├── theme/
@@ -34,7 +34,7 @@ vibe-tailwind-library/
 
 ```json
 {
-  "name": "vibe-tailwind-library",
+  "name": "vibe-ui-library",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -129,7 +129,7 @@ export {
 
 Erstelle ein Vite + React Projekt in `/example` das:
 
-- Die Library als lokale Dependency nutzt (`"vibe-tailwind-library": "file:.."`)
+- Die Library als lokale Dependency nutzt (`"vibe-ui-library": "file:.."`)
 - Eine Demo-Seite mit verschiedenen Komponenten zeigt
 - Das Pink-Theme demonstriert
 
@@ -170,7 +170,7 @@ jobs:
 
 #### README.md
 
-- Installation: `npm install vibe-tailwind-library @material-tailwind/react tailwindcss`
+- Installation: `npm install vibe-ui-library @material-tailwind/react tailwindcss`
 - Peer Dependencies Warnung
 - Verwendungsbeispiele
 - Link zur Live Demo
@@ -206,7 +206,7 @@ Ein Prompt für KI-Tools (ChatGPT, Claude, Cursor, v0.dev), der erklärt:
 
    ```tsx
    import { ThemeProvider } from "@material-tailwind/react";
-   import { vibeTheme } from "vibe-tailwind-library";
+   import { vibeTheme } from "vibe-ui-library";
 
    <ThemeProvider value={vibeTheme}>{children}</ThemeProvider>;
    ```
@@ -218,12 +218,7 @@ Ein Prompt für KI-Tools (ChatGPT, Claude, Cursor, v0.dev), der erklärt:
 Nach Fertigstellung sollte die Library so nutzbar sein:
 
 ```tsx
-import {
-  VibeUIProvider,
-  Button,
-  Card,
-  Typography,
-} from "vibe-tailwind-library";
+import { VibeUIProvider, Button, Card, Typography } from "vibe-ui-library";
 
 function App() {
   return (

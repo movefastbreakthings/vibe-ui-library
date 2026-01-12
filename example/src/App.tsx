@@ -15,7 +15,7 @@ import {
   Progress,
   Avatar,
   Badge,
-} from "vibe-tailwind-library";
+} from "vibe-ui-library";
 import {
   HeartIcon,
   SparklesIcon,
@@ -525,8 +525,7 @@ function App() {
             using Material Tailwind
           </Typography>
           <Typography className="text-blue-gray-500 text-sm mt-2">
-            npm install vibe-tailwind-library @material-tailwind/react
-            tailwindcss
+            npm install vibe-ui-library @material-tailwind/react tailwindcss
           </Typography>
         </footer>
       </div>

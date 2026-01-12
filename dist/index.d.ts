@@ -9,7 +9,7 @@ interface VibeUIProviderProps {
  *
  * @example
  * ```tsx
- * import { VibeUIProvider } from 'vibe-tailwind-library';
+ * import { VibeUIProvider } from 'vibe-ui-library';
  *
  * function App() {
  *   return (

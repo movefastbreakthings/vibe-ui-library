@@ -52,7 +52,7 @@ Die `AGENTS.md` enthält alle wichtigen Regeln für AI-Tools:
 ## 📦 Installation
 
 ```bash
-npm install vibe-tailwind-library @material-tailwind/react tailwindcss
+npm install vibe-ui-library @material-tailwind/react tailwindcss
 ```
 
 > ⚠️ **Important:** `@material-tailwind/react` and `tailwindcss` are peer dependencies and must be installed separately.
@@ -60,7 +60,7 @@ npm install vibe-tailwind-library @material-tailwind/react tailwindcss
 ### From GitHub (Latest)
 
 ```bash
-npm install github:yourusername/vibe-tailwind-library @material-tailwind/react tailwindcss
+npm install github:yourusername/vibe-ui-library @material-tailwind/react tailwindcss
 ```
 
 ## 🚀 Quick Start
@@ -89,7 +89,7 @@ export default withMT({
 ### 2. Wrap Your App
 
 ```tsx
-import { VibeUIProvider } from "vibe-tailwind-library";
+import { VibeUIProvider } from "vibe-ui-library";
 
 function App() {
   return (
@@ -110,7 +110,7 @@ import {
   CardBody,
   Typography,
   Input,
-} from "vibe-tailwind-library";
+} from "vibe-ui-library";
 
 function MyComponent() {
   return (
@@ -182,7 +182,7 @@ If `VibeUIProvider` causes issues, use the theme directly:
 
 ```tsx
 import { ThemeProvider } from "@material-tailwind/react";
-import { vibeTheme } from "vibe-tailwind-library";
+import { vibeTheme } from "vibe-ui-library";
 
 function App() {
   return (
@@ -195,7 +195,7 @@ function App() {
 
 ## 📖 Live Demo
 
-Check out the live demo: [GitHub Pages Demo](https://movefastbreakthings.github.io/vibe-tailwind-library/)
+Check out the live demo: [GitHub Pages Demo](https://movefastbreakthings.github.io/vibe-ui-library/)
 
 ## 🤖 AI Integration
 
